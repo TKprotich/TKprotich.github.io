@@ -8,20 +8,59 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
     <title>tkprotich</title>
+
+    <!-- Lato Font -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Stylesheet -->
+    <link href="assets/css/gallery-materialize.min.css" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Prism -->
+    <link href="assets/css/prism.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
 
-    <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container">
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li> <a href="#about">About</a> </li>
-            <li> <a href="#skills">Skills</a> </li>
-            <li> <a href="#projects">Projects</a> </li>
+    <nav class="nav-extended blue">
+      <div class="nav-background">
+        <div class="pattern active" style="background-image: url('http://placehold.it/1400x300');"></div>
+      </div>
+      <div class="nav-wrapper container">
+        <a href="index.html" class="brand-logo"><i class="material-icons">camera</i>TKprotich</a>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          
+            <li> <a href="index.html">Home</a> </li>
+            <li class="active"><a href="docs.html">Docs</a></li>
             <li> <a href="#contacts">Contact</a> </li>
-         </ul>
+          
+        </ul>
+        
+
+        <div class="nav-header center">
+          <h1>Professional Profile</h1>
+          <div class="tagline">Learn how to do stuff</div>
         </div>
-      </nav>
+      </div>
+        <!-- Fixed Masonry Filters -->
+        <div class="categories-wrapper amber darken-3">
+          <div class="categories-container">
+            <ul class="categories container">
+              <li class="active"><a href="#all">All</a></li>
+              <!-- <li><a href="#about">About</a></li>
+              <li><a href="#skills"> Skills</a></li>
+              <li><a href="#projects">Projects</a></li> -->
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <ul class="sidenav" id="nav-mobile">
+      <li><a href="index.html"><i class="material-icons">camera</i>Home</a></li>
+      <li class="active"><a href="docs.html"><i class="material-icons">school</i>Docs</a></li>
+    </ul>
 
   
     <!-- PROFILE SUMMARY -->
@@ -31,5 +70,123 @@
     <!-- Scroll to top -->
     <!-- Footer section -->
     <!-- Scripts -->
+    <!-- Gallery -->
+    <div id="portfolio" class="section gray">
+      <div class="container">
+        <div class="gallery row">
+          <div class="col l4 m6 s12 gallery-item gallery-expand gallery-filter about">
+            <div class="gallery-curve-wrapper">
+              <a class="gallery-cover gray">
+                <img class="responsive-img" src="assets/img/tims.jpg" alt="placeholder">
+              </a>
+              <div class="gallery-header">
+                <span>Who is TKprotich?</span>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h3>What they say</h3>
+                </div>
+                <p class="description">
+                 I am a reliable and resourceful data professional with practical experience in the management process, project analysis and planning, quality and risk management, reporting and staff capacity building.</p>
+                <p class="description">
+                  I use  Python and R language, and Microsoft Excel.</p>
+
+                <!-- <div class="carousel-wrapper">
+                  <div class="carousel">
+                    <a class="carousel-item" href="#one!"><img src="http://placehold.it/300x200"></a>
+                    <a class="carousel-item" href="#two!"><img src="http://placehold.it/300x200"></a>
+                    <a class="carousel-item" href="#three!"><img src="http://placehold.it/300x200"></a>
+                    <a class="carousel-item" href="#four!"><img src="http://placehold.it/300x200"></a>
+                    <a class="carousel-item" href="#five!"><img src="http://placehold.it/300x200"></a>
+                  </div>
+                </div> -->
+              </div>
+              <div class="gallery-action">
+                <a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">favorite</i></a>
+              </div>
+            </div>
+          </div>
+         
+          <div class="col l4 m6 s12 gallery-item gallery-expand gallery-filter skills">
+            <div class="gallery-curve-wrapper">
+              <a class="gallery-cover gray">
+                <img class="responsive-img" src="http://placehold.it/350x300" alt="placeholder">
+              </a>
+              <div class="gallery-header">
+                <span>Skills</span>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h3>Competence</h3>
+                </div>
+                <p class="description">Data collection tools epi data for medical data and ODK tools for resource constraint environments.</p>
+                <p class="description">Web scraping</p>
+                <p class="description">Database Management with SQL and programming with Python and R language</p>
+                <p class="description">The team working and resource mobilization through participation in proposal development with other program staff.</p>
+                <p class="description">Capacity building of the staff especially in monitoring and evaluation related programs and tools.</p>
+
+                <div class="carousel-wrapper">
+                  <div class="carousel">
+                    <a class="carousel-item" href="#one!"><img src="http://placehold.it/300x200"></a>
+                    <a class="carousel-item" href="#two!"><img src="http://placehold.it/300x200"></a>
+                    <a class="carousel-item" href="#three!"><img src="http://placehold.it/300x200"></a>
+                    <a class="carousel-item" href="#four!"><img src="http://placehold.it/300x200"></a>
+                    <a class="carousel-item" href="#five!"><img src="http://placehold.it/300x200"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-action">
+                <a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">favorite</i></a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col l4 m6 s12 gallery-item gallery-expand gallery-filter projects">
+            <div class="gallery-curve-wrapper">
+              <a class="gallery-cover gray">
+                <img class="responsive-img" src="http://placehold.it/350x250" alt="placeholder">
+              </a>
+              <div class="gallery-header">
+                <span>Project1</span>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h3>Comming Soon</h3>
+                </div>
+                <p class="description">Web Apps</p>
+                <p class="description">Machine Learning Models</p>
+                <p class="description">Python Programs</p>
+                <p class="description">Articles</p>
+
+                <div class="carousel-wrapper">
+                  <div class="carousel">
+                    <a class="carousel-item" href="#one!"><img src="http://placehold.it/300x200"></a>
+                    <a class="carousel-item" href="#two!"><img src="http://placehold.it/300x200"></a>
+                    <a class="carousel-item" href="#three!"><img src="http://placehold.it/300x200"></a>
+                    <a class="carousel-item" href="#four!"><img src="http://placehold.it/300x200"></a>
+                    <a class="carousel-item" href="#five!"><img src="http://placehold.it/300x200"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-action">
+                <a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">favorite</i></a>
+              </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+
+      </div>
+
+    </div><!-- /.container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/color-thief.min.js"></script>
+    <script src="assets/js/galleryExpand.js"></script>
+    <script src="assets/js/init.js"></script>
 </body>
 </html>
